@@ -1,5 +1,45 @@
 * {
   box-sizing: 0;
+  color: #F1F5F9;
+  font-family: "Archivo", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 800;
+}
+
+h2, h3 {
+  line-height: 140%;
+}
+
+h3, span, p {
+  font-size: 0.875rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 135%;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+span {
+  font-weight: 600;
+}
+
+p {
+  line-height: 160%;
+}
+
+body {
+  background-color: #0F172A;
+  height: 100vh;
+  width: 100vw;
+}
+body #logo {
+  font-family: "Archivo Black", sans-serif;
 }/*# sourceMappingURL=styles.css.map */
