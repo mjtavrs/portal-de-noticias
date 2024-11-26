@@ -40,6 +40,48 @@ body {
   height: 100vh;
   width: 100vw;
 }
-body #logo {
-  font-family: "Archivo Black", sans-serif;
+body header section div {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+body header section div span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+body header section div i {
+  font-size: 1.25rem;
+}
+body header #navbarPrincipal {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 2rem;
+}
+body header #navbarSecundaria {
+  color: #CBD5E1;
+  border-top: 1px solid #1E293B;
+  border-bottom: 1px solid #1E293B;
+  padding: 0.875rem 2rem;
+}
+body header #navbarSecundaria nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+body header #navbarSecundaria nav ul li {
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+body main #principaisNoticias {
+  display: grid;
+  grid-template-areas: "A A B C" "A A D E";
+  grid-template-rows: 12.5rem 12.5rem;
+  padding: 2.5rem 2rem;
+  gap: 1rem;
+}
+body main #principaisNoticias div {
+  border: 1px solid red;
+}
+body main #principaisNoticias #noticiaPrincipal {
+  grid-area: A;
 }/*# sourceMappingURL=styles.css.map */
