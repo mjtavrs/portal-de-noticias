@@ -62,7 +62,7 @@ body {
             padding: 2.5rem 2rem;
             gap: 1rem;
 
-            div {
+            article {
                 background-size: cover;
                 border-radius: 4px;
                 display: flex;
@@ -80,7 +80,7 @@ body {
                 }
             }
 
-            div:not(:nth-child(1)) {
+            article:not(:nth-child(1)) {
                 padding: 0.75rem;
 
                 h3 {
@@ -103,19 +103,19 @@ body {
                 grid-area: A;
             }
 
-            div:nth-child(2) {
+            article:nth-child(2) {
                 background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0), rgba(2, 6, 23, 1)), url("../assets/images/articles/image_02.png");
             }
 
-            div:nth-child(3) {
+            article:nth-child(3) {
                 background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0), rgba(2, 6, 23, 1)), url("../assets/images/articles/image_03.png");
             }
 
-            div:nth-child(4) {
+            article:nth-child(4) {
                 background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0), rgba(2, 6, 23, 1)), url("../assets/images/articles/image_04.png");
             }
 
-            div:nth-child(5) {
+            article:nth-child(5) {
                 background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0), rgba(2, 6, 23, 1)), url("../assets/images/articles/image_05.png");
             }
         }
