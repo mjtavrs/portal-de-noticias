@@ -199,5 +199,31 @@ body {
                 }
             }
         }
+
+        #noticiasGerais {
+            display: grid;
+            grid-template-areas: 
+                "A B"
+                "A C"
+            ;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 34rem;
+            height: 53.5rem;
+
+            #destaquesDeInteligenciaArtificial {
+                border: 1px solid red;
+                grid-area: A;
+            }
+
+            #anuncio {
+                border: 1px solid green;
+                grid-area: B;
+            }
+
+            #viuIssoAqui {
+                border: 1px solid yellow;
+                grid-area: C;
+            }
+        }
     }
 }

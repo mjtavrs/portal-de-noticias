@@ -188,4 +188,23 @@ body main #maisLidasDaSemana #carrosselMaisLidas article:nth-child(3) div {
 }
 body main #maisLidasDaSemana #carrosselMaisLidas article:nth-child(4) div {
   background-image: url("../assets/images/articles/image_09.png");
+}
+body main #noticiasGerais {
+  display: grid;
+  grid-template-areas: "A B" "A C";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 34rem;
+  height: 53.5rem;
+}
+body main #noticiasGerais #destaquesDeInteligenciaArtificial {
+  border: 1px solid red;
+  grid-area: A;
+}
+body main #noticiasGerais #anuncio {
+  border: 1px solid green;
+  grid-area: B;
+}
+body main #noticiasGerais #viuIssoAqui {
+  border: 1px solid yellow;
+  grid-area: C;
 }/*# sourceMappingURL=styles.css.map */
