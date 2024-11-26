@@ -86,6 +86,9 @@ body main .contentTag {
   width: -moz-fit-content;
   width: fit-content;
 }
+body main article {
+  cursor: pointer;
+}
 body main #principaisNoticias {
   display: grid;
   grid-template-areas: "A A B C" "A A D E";
@@ -154,11 +157,25 @@ body main #maisLidasDaSemana #carrosselMaisLidas {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
+body main #maisLidasDaSemana #carrosselMaisLidas article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 body main #maisLidasDaSemana #carrosselMaisLidas article div {
   align-items: flex-start;
   background-size: cover;
   display: flex;
   height: 10rem;
+  padding: 0.5rem;
+}
+body main #maisLidasDaSemana #carrosselMaisLidas article h2 {
+  display: -webkit-box;
+  line-clamp: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 body main #maisLidasDaSemana #carrosselMaisLidas article:nth-child(1) div {
   background-image: url("../assets/images/articles/image_06.png");

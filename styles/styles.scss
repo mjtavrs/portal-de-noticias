@@ -64,6 +64,10 @@ body {
             width: fit-content;
         }
 
+        article {
+            cursor: pointer;
+        }
+
         #principaisNoticias {
             display: grid;
             grid-template-areas: 
@@ -150,11 +154,26 @@ body {
                 gap: 1rem;
 
                 article {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+
                     div {
                         align-items: flex-start;
                         background-size: cover;
                         display: flex;
                         height: 10rem;
+                        padding: 0.5rem;
+                    }
+
+                    h2 {
+                        display: -webkit-box;
+                        line-clamp: inherit;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
                     }
                 }
 
