@@ -72,6 +72,20 @@ body header #navbarSecundaria nav ul li {
   cursor: pointer;
   font-size: 0.875rem;
 }
+body main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+body main .contentTag {
+  background-color: #1D4ED8;
+  border-radius: 4px;
+  font-size: 0.625rem;
+  padding: 0.25rem 0.5rem;
+  text-transform: uppercase;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 body main #principaisNoticias {
   display: grid;
   grid-template-areas: "A A B C" "A A D E";
@@ -87,15 +101,6 @@ body main #principaisNoticias article {
   gap: 0.5rem;
   flex-direction: column;
   justify-content: flex-end;
-}
-body main #principaisNoticias article span {
-  background-color: #1D4ED8;
-  border-radius: 4px;
-  font-size: 0.625rem;
-  padding: 0.25rem 0.5rem;
-  text-transform: uppercase;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 body main #principaisNoticias article:not(:nth-child(1)) {
   padding: 0.75rem;
@@ -125,4 +130,45 @@ body main #principaisNoticias article:nth-child(4) {
 }
 body main #principaisNoticias article:nth-child(5) {
   background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0), rgb(2, 6, 23)), url("../assets/images/articles/image_05.png");
+}
+body main #maisLidasDaSemana {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+body main #maisLidasDaSemana section:nth-child(1) {
+  border-top: 1px solid #1E293B;
+  color: #CBD5E1;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+}
+body main #maisLidasDaSemana section:nth-child(1) div {
+  align-items: center;
+  display: flex;
+  gap: 0.25rem;
+}
+body main #maisLidasDaSemana #carrosselMaisLidas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+body main #maisLidasDaSemana #carrosselMaisLidas article div {
+  align-items: flex-start;
+  background-size: cover;
+  display: flex;
+  height: 10rem;
+}
+body main #maisLidasDaSemana #carrosselMaisLidas article:nth-child(1) div {
+  background-image: url("../assets/images/articles/image_06.png");
+}
+body main #maisLidasDaSemana #carrosselMaisLidas article:nth-child(2) div {
+  background-image: url("../assets/images/articles/image_07.png");
+}
+body main #maisLidasDaSemana #carrosselMaisLidas article:nth-child(3) div {
+  background-image: url("../assets/images/articles/image_08.png");
+}
+body main #maisLidasDaSemana #carrosselMaisLidas article:nth-child(4) div {
+  background-image: url("../assets/images/articles/image_09.png");
 }/*# sourceMappingURL=styles.css.map */
