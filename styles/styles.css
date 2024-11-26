@@ -97,6 +97,18 @@ body main #principaisNoticias div span {
   width: -moz-fit-content;
   width: fit-content;
 }
+body main #principaisNoticias div:not(:nth-child(1)) {
+  padding: 0.75rem;
+}
+body main #principaisNoticias div:not(:nth-child(1)) h3 {
+  display: -webkit-box;
+  line-clamp: inherit;
+  max-height: 5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 body main #principaisNoticias #noticiaPrincipal {
   background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0), rgb(2, 6, 23)), url("../assets/images/articles/image_01.png");
   padding: 1.5rem;
