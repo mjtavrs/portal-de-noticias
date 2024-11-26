@@ -75,13 +75,42 @@ body header #navbarSecundaria nav ul li {
 body main #principaisNoticias {
   display: grid;
   grid-template-areas: "A A B C" "A A D E";
-  grid-template-rows: 12.5rem 12.5rem;
+  grid-template-rows: repeat(2, 12.5rem);
+  grid-template-columns: repeat(4, 1fr);
   padding: 2.5rem 2rem;
   gap: 1rem;
 }
 body main #principaisNoticias div {
-  border: 1px solid red;
+  background-size: cover;
+  border-radius: 4px;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+body main #principaisNoticias div span {
+  background-color: #1D4ED8;
+  border-radius: 4px;
+  font-size: 0.625rem;
+  padding: 0.25rem 0.5rem;
+  text-transform: uppercase;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 body main #principaisNoticias #noticiaPrincipal {
+  background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0), rgb(2, 6, 23)), url("../assets/images/articles/image_01.png");
+  padding: 1.5rem;
   grid-area: A;
+}
+body main #principaisNoticias div:nth-child(2) {
+  background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0), rgb(2, 6, 23)), url("../assets/images/articles/image_02.png");
+}
+body main #principaisNoticias div:nth-child(3) {
+  background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0), rgb(2, 6, 23)), url("../assets/images/articles/image_03.png");
+}
+body main #principaisNoticias div:nth-child(4) {
+  background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0), rgb(2, 6, 23)), url("../assets/images/articles/image_04.png");
+}
+body main #principaisNoticias div:nth-child(5) {
+  background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0), rgb(2, 6, 23)), url("../assets/images/articles/image_05.png");
 }/*# sourceMappingURL=styles.css.map */
