@@ -90,7 +90,7 @@ body {
             ;
             grid-template-rows: repeat(2, 12.5rem);
             grid-template-columns: repeat(4, 1fr);
-            padding: 2.5rem 2rem;
+            padding: 2.5rem 2rem 0;
             gap: 1rem;
 
             article {
@@ -319,5 +319,6 @@ body {
                 }
             }
         }
+
     }
 }
