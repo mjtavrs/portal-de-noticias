@@ -1,0 +1,1 @@
+This design is intended to be seen in a 1280px window only.
