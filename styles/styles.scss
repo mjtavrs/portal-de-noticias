@@ -208,7 +208,10 @@ body {
             ;
             grid-template-columns: 2fr 1fr;
             grid-template-rows: 1fr 34rem;
+            gap: 2rem;
             height: 53.5rem;
+            margin-bottom: 5rem;
+            padding: 0 2rem;
 
             #destaquesDeInteligenciaArtificial {
                 border: 1px solid red;
