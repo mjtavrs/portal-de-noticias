@@ -37,6 +37,7 @@ p {
 
 body {
   background-color: #0F172A;
+  overflow-x: hidden;
   height: 100vh;
   width: 100vw;
 }
@@ -282,4 +283,16 @@ body main #noticiasGerais #viuIssoAqui section + section article div h3 {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   margin-top: 0.5rem;
+}
+body footer {
+  background-color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+body footer p, body footer a {
+  color: #0F172A;
+}
+body footer p a, body footer a a {
+  font-weight: 800;
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */
