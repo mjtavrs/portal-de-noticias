@@ -225,17 +225,62 @@ body {
                     gap: 2rem;
 
                     article {
+                        display: grid;
+                        grid-template-columns: auto 1fr;
+                        gap: 1rem;
+
                         div {
                             h2 {
+                                display: -webkit-box;
+                                line-clamp: inherit;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
                                 margin: 0.5rem 0 0.25rem;
                             }
+
+                            p {
+                                color: $text-color-secondary;
+                                display: -webkit-box;
+                                line-clamp: inherit;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                
+                                -webkit-line-clamp: 4;
+                                -webkit-box-orient: vertical;
+                            }
+                        }
+
+                        img {
+                            max-width: 11rem;
                         }
                     }
                 }
             }
 
             #anuncio {
+                position: relative;
                 grid-area: B;
+
+                span {
+                    background-color: $text-color-primary;
+                    cursor: pointer;
+                    padding: 0.25rem;
+                    position: absolute;
+                    right: 0.5rem;
+                    top: 0.5rem;
+
+                    i {
+                        color: $brand-color-light;
+                        font-size: 1rem;
+                    }
+                }
+
+                img {
+                    max-width: 30.5rem;
+                }
             }
 
             #viuIssoAqui {

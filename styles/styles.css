@@ -210,11 +210,50 @@ body main #noticiasGerais #destaquesDeInteligenciaArtificial section + section {
   flex-direction: column;
   gap: 2rem;
 }
+body main #noticiasGerais #destaquesDeInteligenciaArtificial section + section article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
 body main #noticiasGerais #destaquesDeInteligenciaArtificial section + section article div h2 {
+  display: -webkit-box;
+  line-clamp: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   margin: 0.5rem 0 0.25rem;
 }
+body main #noticiasGerais #destaquesDeInteligenciaArtificial section + section article div p {
+  color: #CBD5E1;
+  display: -webkit-box;
+  line-clamp: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+body main #noticiasGerais #destaquesDeInteligenciaArtificial section + section article img {
+  max-width: 11rem;
+}
 body main #noticiasGerais #anuncio {
+  position: relative;
   grid-area: B;
+}
+body main #noticiasGerais #anuncio span {
+  background-color: #F1F5F9;
+  cursor: pointer;
+  padding: 0.25rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+body main #noticiasGerais #anuncio span i {
+  color: #60A5FA;
+  font-size: 1rem;
+}
+body main #noticiasGerais #anuncio img {
+  max-width: 30.5rem;
 }
 body main #noticiasGerais #viuIssoAqui {
   grid-area: C;
