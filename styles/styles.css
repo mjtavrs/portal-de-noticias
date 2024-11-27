@@ -256,5 +256,30 @@ body main #noticiasGerais #anuncio img {
   max-width: 30.5rem;
 }
 body main #noticiasGerais #viuIssoAqui {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   grid-area: C;
+}
+body main #noticiasGerais #viuIssoAqui section + section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+body main #noticiasGerais #viuIssoAqui section + section article {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+}
+body main #noticiasGerais #viuIssoAqui section + section article img {
+  max-width: 4.5rem;
+}
+body main #noticiasGerais #viuIssoAqui section + section article div h3 {
+  display: -webkit-box;
+  line-clamp: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */
