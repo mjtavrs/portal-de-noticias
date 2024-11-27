@@ -64,6 +64,20 @@ body {
             width: fit-content;
         }
 
+        .sectionHeader {
+            border-top: 1px solid $stroke-color;
+            color: $text-color-secondary;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0.75rem;
+
+            div {
+                align-items: center;
+                display: flex;
+                gap: 0.25rem;
+            }
+        }
+
         article {
             cursor: pointer;
         }
@@ -133,20 +147,6 @@ body {
             flex-direction: column;
             gap: 1.5rem;
             padding: 0 2rem;
-            
-            section:nth-child(1) {
-                border-top: 1px solid $stroke-color;
-                color: $text-color-secondary;
-                display: flex;
-                justify-content: space-between;
-                padding-top: 0.75rem;
-
-                div {
-                    align-items: center;
-                    display: flex;
-                    gap: 0.25rem;
-                }
-            }
 
             #carrosselMaisLidas {
                 display: grid;
@@ -214,17 +214,31 @@ body {
             padding: 0 2rem;
 
             #destaquesDeInteligenciaArtificial {
-                border: 1px solid red;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
                 grid-area: A;
+
+                section + section {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+
+                    article {
+                        div {
+                            h2 {
+                                margin: 0.5rem 0 0.25rem;
+                            }
+                        }
+                    }
+                }
             }
 
             #anuncio {
-                border: 1px solid green;
                 grid-area: B;
             }
 
             #viuIssoAqui {
-                border: 1px solid yellow;
                 grid-area: C;
             }
         }

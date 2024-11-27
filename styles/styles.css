@@ -86,6 +86,18 @@ body main .contentTag {
   width: -moz-fit-content;
   width: fit-content;
 }
+body main .sectionHeader {
+  border-top: 1px solid #1E293B;
+  color: #CBD5E1;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+}
+body main .sectionHeader div {
+  align-items: center;
+  display: flex;
+  gap: 0.25rem;
+}
 body main article {
   cursor: pointer;
 }
@@ -140,18 +152,6 @@ body main #maisLidasDaSemana {
   gap: 1.5rem;
   padding: 0 2rem;
 }
-body main #maisLidasDaSemana section:nth-child(1) {
-  border-top: 1px solid #1E293B;
-  color: #CBD5E1;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 0.75rem;
-}
-body main #maisLidasDaSemana section:nth-child(1) div {
-  align-items: center;
-  display: flex;
-  gap: 0.25rem;
-}
 body main #maisLidasDaSemana #carrosselMaisLidas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -200,14 +200,22 @@ body main #noticiasGerais {
   padding: 0 2rem;
 }
 body main #noticiasGerais #destaquesDeInteligenciaArtificial {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   grid-area: A;
 }
+body main #noticiasGerais #destaquesDeInteligenciaArtificial section + section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+body main #noticiasGerais #destaquesDeInteligenciaArtificial section + section article div h2 {
+  margin: 0.5rem 0 0.25rem;
+}
 body main #noticiasGerais #anuncio {
-  border: 1px solid green;
   grid-area: B;
 }
 body main #noticiasGerais #viuIssoAqui {
-  border: 1px solid yellow;
   grid-area: C;
 }/*# sourceMappingURL=styles.css.map */
